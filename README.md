@@ -1,15 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-## Weather
-This app provide some current weather information about cities.
+## Weather App
+This app provides some current weather information about cities.
 You can see on the home page, there are some of biggest city in the world and get current information with click.
 Also if you would want to see different place than home page's city, you can use search by name tab and enter your city name to get result
 
 
 ### Before fork the project
 This app use https://openweathermap.org/ free api to get information about current weather.
-You should get api-key yourself and you have to add this api-key on src/components/useWeatherInfo's API_KEY="" part.
+You should get api-key yourself and you have to add this api key into the .env file 
+
 
 ### Available Scripts
 

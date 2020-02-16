@@ -3,8 +3,8 @@ import axios from 'axios';
 
 const useWeatherInfo = (cityName) => {
     const [data, setData] = useState([]);
-    const API_KEY = "";
-
+    const API_KEY = process.env.REACT_APP_API_KEY;
+    console.log('apikey', process.env.REACT_APP_API_KEY);
     const fetchWeatherByName = async (cityName) => {
         if(cityName !== '') {
             const response = await axios.get(
