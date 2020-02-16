@@ -16,7 +16,7 @@ const SearchByName = () => {
                     <div className="ui medium header" style={centerText}>{data.name}</div>
                     <div>
                         { data.length <= 0
-                            ? 'Please select a city name'
+                            ? 'Please enter a city name'
                             :   (<div>
                                     <div style={rowContainer}>
                                         <div>

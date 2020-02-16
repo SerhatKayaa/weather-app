@@ -11,7 +11,7 @@ const Home = () => {
             <div class="ui large header" style={centeredText}>Choose City</div>
             <div class="ui large header" style={centeredText}>{data.name}</div>
             { data.length <= 0
-                ? 'Please enter a city name'
+                ? 'Please select a city name'
                 :   (<div className="ui container ui segment">
                         <div style={rowContainer}>
                             <div>

@@ -20,8 +20,9 @@ const ScrollMenuContainer = (menuItems) => {
         { name: 'Cape Town'},
         { name: 'Nepal' },
         { name: 'Budapest' },
-        { name: 'Beograd' },
-        { name: 'Viyana' }
+        { name: 'Belgrade' },
+        { name: 'Viyana' },
+        { name: 'Cologne' },
     ];
     
     const MenuItem = ({ text }) => {
@@ -37,7 +38,7 @@ const ScrollMenuContainer = (menuItems) => {
     
     const onSelect = (key) => {
         setSelected(key);
-        dispatch({type: 'SELECTED_CITY', payload: selected});
+        dispatch({type: 'SELECTED_CITY', payload: key});
     }
 
     const items = Menu(list, selected);
