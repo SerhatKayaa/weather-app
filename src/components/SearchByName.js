@@ -5,7 +5,7 @@ import useWeatherInfo from './useWeatherInfo';
 
 const SearchByName = () => {
     const cityName = useSelector(state => state.cityName)
-    console.log(cityName)
+
     const data = useWeatherInfo(cityName);
 
     return (
@@ -16,7 +16,7 @@ const SearchByName = () => {
                     <div className="ui medium header" style={centerText}>{data.name}</div>
                     <div>
                         { data.length <= 0
-                            ? 'Please enter a city name'
+                            ? 'Please select a city name'
                             :   (<div>
                                     <div style={rowContainer}>
                                         <div>
