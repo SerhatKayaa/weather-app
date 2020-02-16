@@ -9,6 +9,7 @@ const Home = () => {
     return (
         <div>
             <div class="ui large header" style={centeredText}>Choose City</div>
+            <div class="ui large header" style={centeredText}>{data.name}</div>
             { data.length <= 0
                 ? 'Please enter a city name'
                 :   (<div className="ui container ui segment">
