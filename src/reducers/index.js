@@ -1,4 +1,6 @@
 import { combineReducers } from "redux";
+import { reducer as formReducer } from 'redux-form';
+
 
 export const cityNameReducer = (cityName='', action) => {
     if(action.type === 'GET_CITY_NAME') {
@@ -17,5 +19,6 @@ export const selectedCityReducer = (selectedCity = '', action) => {
 
 export default combineReducers({
     cityName: cityNameReducer,
-    selectedCity: selectedCityReducer
+    selectedCity: selectedCityReducer,
+    form: formReducer
 })

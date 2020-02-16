@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const useWeatherInfo = (cityName) => {
     const [data, setData] = useState([]);
-    const API_KEY = "";
+    const API_KEY = "ca9030d3b4aa13f0fe710235aea3d334";
 
     const fetchWeatherByName = async (cityName) => {
         if(cityName !== '') {
